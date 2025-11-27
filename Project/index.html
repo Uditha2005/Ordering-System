@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Potato Paradise</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Potato Paradise</h1>
+      <p>Fresh chopped potatoes with your favorite toppings!</p>
+      <nav>
+        <a href="preorder.html" class="btn">Go to Pre-Order Page</a>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="grid">
+        <section class="order-form">
+          <h2>Order Form</h2>
+          <form id="orderForm">
+            <div class="form-group">
+              <label for="username">Your Name</label>
+              <input type="text" id="username" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="itemName">Select Item</label>
+              <select id="itemName" required>
+                <option value="Regular Potato">Regular Potato</option>
+                <option value="Sweet Potato">Sweet Potato</option>
+                <option value="Loaded Potato">Loaded Potato</option>
+                <option value="Spicy Potato">Spicy Potato</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="amount">Amount</label>
+              <input type="number" id="amount" min="1" value="1" required>
+            </div>
+            
+            <div class="form-group">
+              <label>Select Toppings</label>
+              <div class="toppings-grid">
+                <div class="topping-item">
+                  <input type="checkbox" id="cheese" value="cheese">
+                  <label for="cheese">Cheese</label>
+                </div>
+                <div class="topping-item">
+                  <input type="checkbox" id="tomatoes" value="tomatoes">
+                  <label for="tomatoes">Tomatoes</label>
+                </div>
+                <div class="topping-item">
+                  <input type="checkbox" id="chilies" value="chilies">
+                  <label for="chilies">Chilies</label>
+                </div>
+                <div class="topping-item">
+                  <input type="checkbox" id="bacon" value="bacon">
+                  <label for="bacon">Bacon</label>
+                </div>
+                <div class="topping-item">
+                  <input type="checkbox" id="sour-cream" value="sour-cream">
+                  <label for="sour-cream">Sour Cream</label>
+                </div>
+                <div class="topping-item">
+                  <input type="checkbox" id="green-onions" value="green-onions">
+                  <label for="green-onions">Green Onions</label>
+                </div>
+              </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Confirm Order</button>
+          </form>
+        </section>
+        
+        <section class="purchase-history">
+          <h2>Purchase History</h2>
+          <div class="search-box">
+            <label for="search">Search by Username</label>
+            <input type="text" id="search" placeholder="Enter username to search">
+          </div>
+          
+          <div id="purchasesList" class="purchases-list">
+            <div class="empty-message">No purchase history yet</div>
+          </div>
+        </section>
+      </div>
+    </main>
+    
+    <footer>
+      <p>&copy; 2023 Potato Paradise. All rights reserved.</p>
+    </footer>
+  </div>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
+

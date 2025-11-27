@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pre-Order - Potato Paradise</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Pre-Order Your Potatoes</h1>
+      <p>Skip the line and pick up your order at your convenience!</p>
+      <nav>
+        <a href="index.html" class="btn">Back to Main Page</a>
+      </nav>
+    </header>
+    
+    <main>
+      <section class="preorder-form">
+        <h2>Schedule Your Pre-Order</h2>
+        <form id="preorderForm">
+          <div class="form-row">
+            <div class="form-column">
+              <div class="form-group">
+
+
+                <label for="preUsername">Your Name</label>
+                <input type="text" id="preUsername" placeholder="Enter your name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="preItemName">Select Item</label>
+                <select id="preItemName" required>
+                  <option value="Regular Potato">Regular Potato</option>
+                  <option value="Sweet Potato">Sweet Potato</option>
+                  <option value="Loaded Potato">Loaded Potato</option>
+                  <option value="Spicy Potato">Spicy Potato</option>
+                </select>
+              </div>            
+              
+              <div class="form-group">
+                <label for="preAmount">Amount</label>
+                <input type="number" id="preAmount" min="1" value="1" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="timeSlot">Pickup Time</label>
+                <select id="timeSlot" required>
+                  <option value="">Select a time slot</option>
+                  <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
+                  <option value="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</option>
+                  <option value="12:00 PM - 1:00 PM">12:00 PM - 1:00 PM</option>
+                  <option value="1:00 PM - 2:00 PM">1:00 PM - 2:00 PM</option>
+                  <option value="2:00 PM - 3:00 PM">2:00 PM - 3:00 PM</option>
+                  <option value="3:00 PM - 4:00 PM">3:00 PM - 4:00 PM</option>
+                  <option value="4:00 PM - 5:00 PM">4:00 PM - 5:00 PM</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-column">
+              <div class="form-group">
+                <label for="pickupDate">Pickup Date</label>
+                <input type="date" id="pickupDate" required>
+              </div>
+              
+              <div class="form-group">
+                <label>Select Toppings</label>
+                <div class="toppings-grid">
+                  <div class="topping-item">
+                    <input type="checkbox" id="preCheese" value="cheese">
+                    <label for="preCheese">Cheese</label>
+                  </div>
+                  <div class="topping-item">
+                    <input type="checkbox" id="preTomatoes" value="tomatoes">
+                    <label for="preTomatoes">Tomatoes</label>
+                  </div>
+                  <div class="topping-item">
+                    <input type="checkbox" id="preChilies" value="chilies">
+                    <label for="preChilies">Chilies</label>
+                  </div>
+                  <div class="topping-item">
+                    <input type="checkbox" id="preBacon" value="bacon">
+                    <label for="preBacon">Bacon</label>
+                  </div>
+                  <div class="topping-item">
+                    <input type="checkbox" id="preSourCream" value="sour-cream">
+                    <label for="preSourCream">Sour Cream</label>
+                  </div>
+                  <div class="topping-item">
+                    <input type="checkbox" id="preGreenOnions" value="green-onions">
+                    <label for="preGreenOnions">Green Onions</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Schedule Pre-Order</button>
+
+        </form>
+      </section>
+      
+      <section class="benefits">
+        <h2>Pre-Order Benefits</h2>
+        <ul>
+          <li>Skip the line and pick up your order at your convenience</li>
+          <li>Guarantee availability of your favorite potato dishes</li>
+          <li>Special discounts for pre-orders over $20</li>
+          <li>Customize your order with all available toppings</li>
+        </ul>
+      </section>
+    </main>
+    
+    <footer>
+      <p>&copy; 2023 Potato Paradise. All rights reserved.</p>
+    </footer>
+  </div>
+  
+  <script src="js/preorder.js"></script>
+</body>
+</html>
+
